@@ -79,7 +79,7 @@ public class Koormad {
         for (int i = 0; i < stack.size(); i++) {
             int j = tellimused.getByAlused((int)stack.get(i));
             tellimused.setStaatus(j, 1);
-            a.salvestaTellimus(tellimused.getNumber(j), tellimused.getKaal(j), tellimused.getAlused(j), tellimused.getStaatus(j));
+            a.updateTellimusStaatus(tellimused.getNumber(j), 1);
         }
         a.sulgeYhendus();
     }
