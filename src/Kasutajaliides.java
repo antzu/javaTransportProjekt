@@ -101,7 +101,7 @@ public class Kasutajaliides {
             int k = tellimus.getKaal();
             //Saves user input to Database also
             Database db = new Database();
-            db.salvestaTellimus(n, k, a);
+            db.salvestaTellimus(n, k, a, 0);
             db.sulgeYhendus();
             //Updates UI table according to input
             tabel.updateTable();

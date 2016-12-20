@@ -14,11 +14,11 @@ public class Tellimus {
         this.staatus = 0;
     }
 
-    public Tellimus(int kaal, int alused, int number) {
+    public Tellimus(int kaal, int alused, int number, int staatus) {
         this.kaal = kaal;
         this.alused = alused;
         this.number = number;
-        this.staatus = 0;
+        this.staatus = staatus;
     }
     public String toString() {
         return ("Tellimus nr: " + this.number + " Aluseid: " + this.alused + " Kaal: " + this.kaal + " Staatus: "+ this.staatus);

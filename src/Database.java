@@ -53,8 +53,8 @@ public class Database {
             teostaAndmebaasiMuudatus(sql);
     }
 
-    public void salvestaTellimus (int n, int k, int a/*, int s*/){
-        String sql = "INSERT INTO TELLIMUSED (TELLIMUSNR, KAAL, ALUSED, STAATUS) VALUES ('"+n+"', '"+k+"', '"+a+"', '"+0+"')";
+    public void salvestaTellimus (int n, int k, int a, int s){
+        String sql = "INSERT INTO TELLIMUSED (TELLIMUSNR, KAAL, ALUSED, STAATUS) VALUES ('"+n+"', '"+k+"', '"+a+"', '"+s+"')";
         teostaAndmebaasiMuudatus(sql);
     }
     public void salvestaVeok (int k, int a, int m){
@@ -96,7 +96,7 @@ public class Database {
             ResultSet rs = stat.executeQuery(sql);
 
             while (rs.next()) {
-                TellimusteKogu.add(new Tellimus(rs.getInt("KAAL"), rs.getInt("ALUSED"), rs.getInt("TELLIMUSNR")));
+                TellimusteKogu.add(new Tellimus(rs.getInt("KAAL"), rs.getInt("ALUSED"), rs.getInt("TELLIMUSNR"), rs.getInt("STAATUS")));
             }
 
             rs.close();
