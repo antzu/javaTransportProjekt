@@ -22,20 +22,21 @@ public class Tabel {
         }
     }
     public void setup () throws Exception{
-        //Name column
-        TableColumn<Tellimus, String> kaalColumn = new TableColumn<>("Kaal");
+        //Kaal column
+        TableColumn<Tellimus, Integer> kaalColumn = new TableColumn<>("Kaal");
         kaalColumn.setMinWidth(200);
         kaalColumn.setCellValueFactory(new PropertyValueFactory<>("kaal"));
 
-        //Price column
-        TableColumn<Tellimus, Double> aluseidColumn = new TableColumn<>("Aluseid");
+        //Alused column
+        TableColumn<Tellimus, Integer> aluseidColumn = new TableColumn<>("Aluseid");
         aluseidColumn.setMinWidth(100);
         aluseidColumn.setCellValueFactory(new PropertyValueFactory<>("alused"));
 
-        //Quantity column
-        TableColumn<Tellimus, String> nrColumn = new TableColumn<>("Nr");
+        //Nr column
+        TableColumn<Tellimus, Integer> nrColumn = new TableColumn<>("Nr");
         nrColumn.setMinWidth(100);
         nrColumn.setCellValueFactory(new PropertyValueFactory<>("number"));
+
 
         table = new TableView<>();
         table.setItems(getTellimus());

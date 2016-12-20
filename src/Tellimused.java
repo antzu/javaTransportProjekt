@@ -37,6 +37,17 @@ public class Tellimused {
     public int getStaatus (int i) {
         return TellimusteKogu.get(i).getStaatus();
     }
+    public void setStaatus (int i, int j){
+        TellimusteKogu.get(i).setStaatus(j);
+    }
+    public int getByAlused (int i){
+        for (int j = 0; j < TellimusteKogu.size(); j++) {
+            if (getAlused(j) == i){
+                return j;
+            }
+        }
+        return 9999;
+    }
     public void TellimusedKokku() {
         Database a = new Database();
         TellimusteKogu = a.TellimusteKogu();

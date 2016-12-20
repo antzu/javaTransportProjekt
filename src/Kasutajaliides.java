@@ -37,10 +37,12 @@ public class Kasutajaliides {
         Button impordi = new Button("IMPORT Tellimused");
         Button prindi = new Button("Prindi");
         Button impordiveokid = new Button("IMPORT Veokid");
+        Button koormad = new Button("GENEREERI Koormad");
 
         transactions.getChildren().add(impordi);
         transactions.getChildren().add(prindi);
         transactions.getChildren().add(impordiveokid);
+        transactions.getChildren().add(koormad);
         bpane.setLeft(transactions);
 
         //Keskmine tabeli paneel ülemine osa:
@@ -84,6 +86,9 @@ public class Kasutajaliides {
         impordiveokid.setOnAction(event -> {
             Veokid veokid = new Veokid();
             veokid.ImportPopup();
+        });
+        koormad.setOnAction(event -> {
+            new Koormad();
         });
         addButton.setOnAction(event -> {
             Tellimus tellimus = new Tellimus();

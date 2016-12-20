@@ -39,4 +39,19 @@ public class Veok {
         this.vabaalusekohti = vabaalusekohti;
     }
 
+    public int getKandevoime() {
+        return kandevoime;
+    }
+
+    public int getAlusekohti() {
+        return alusekohti;
+    }
+
+    public int getMaxtellimusi() {
+        return maxtellimusi;
+    }
+
+    public int getVabaalusekohti() {
+        return vabaalusekohti;
+    }
 }

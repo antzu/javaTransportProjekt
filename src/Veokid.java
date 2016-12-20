@@ -7,7 +7,6 @@ import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -116,5 +115,17 @@ public class Veokid {
             setVabadAlused(i, VeokiteKogu.get(i).alusekohti);
             System.out.println(VeokiteKogu.get(i));
         }
+    }
+    public int getAlusekohti (int i){
+        return VeokiteKogu.get(i).getAlusekohti();
+    }
+    public int getKandevoime (int i){
+        return VeokiteKogu.get(i).getKandevoime();
+    }
+    public int getMaxtellimusi (int i){
+        return VeokiteKogu.get(i).getMaxtellimusi();
+    }
+    public int getVabaalusekohti (int i){
+        return VeokiteKogu.get(i).getVabaalusekohti();
     }
 }
