@@ -1,3 +1,4 @@
+import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -104,7 +105,15 @@ public class Kasutajaliides {
             kaalInput.clear();
         });
         deleteButton.setOnAction(event -> {
-
+            ObservableList<Tellimus> tellimusSelected, allTellimused;
+            allTellimused = tabel.table.getItems();
+            tellimusSelected = tabel.table.getSelectionModel().getSelectedItems();
+            Database db = new Database();
+            for (int i = 0; i < tellimusSelected.size(); i++) {
+                db.kustutaTellimus(tellimusSelected.get(i).getNumber());
+            }
+            db.sulgeYhendus();
+            tellimusSelected.forEach(allTellimused::remove);
         });
     }
 }

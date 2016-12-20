@@ -45,6 +45,13 @@ public class Database {
             e.printStackTrace();
         }
     }
+    public void kustutaTellimus (int n) {
+            //Statement stat = conn.createStatement();
+            String sql = "DELETE FROM TELLIMUSED WHERE TELLIMUSNR like ('"+n+"')";
+            //stat.executeUpdate(sql);
+            //stat.close();
+            teostaAndmebaasiMuudatus(sql);
+    }
 
     public void salvestaTellimus (int n, int k, int a/*, int s*/){
         String sql = "INSERT INTO TELLIMUSED (TELLIMUSNR, KAAL, ALUSED, STAATUS) VALUES ('"+n+"', '"+k+"', '"+a+"', '"+0+"')";
