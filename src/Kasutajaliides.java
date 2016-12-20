@@ -1,6 +1,9 @@
+import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
@@ -26,7 +29,10 @@ public class Kasutajaliides {
         stage.setTitle("Transpordiplaneerija");
         stage.show();
 
+        //Vasak paneel:
         VBox transactions = new VBox();
+        transactions.setPadding(new Insets(5, 10, 5, 5));
+        transactions.setSpacing(5);
         Button impordi = new Button("IMPORT Tellimused");
         Button prindi = new Button("Prindi");
         Button impordiveokid = new Button("IMPORT Veokid");
@@ -36,12 +42,35 @@ public class Kasutajaliides {
         transactions.getChildren().add(impordiveokid);
         bpane.setLeft(transactions);
 
+        //Keskmine tabeli paneel ülemine osa:
         Tabel tabel = new Tabel();
         VBox tabeliala = new VBox();
         tabeliala.getChildren().addAll(tabel.table);
         bpane.setCenter(tabeliala);
 
+        //Keskmine tabeli paneel alumine osa (menüü):
+        //
+        TextField nrInput = new TextField();
+        nrInput.setPromptText("Nr");
+        nrInput.setMinWidth(100);
+        //
+        TextField alusedInput = new TextField();
+        alusedInput.setPromptText("Alused");
+        //
+        TextField kaalInput = new TextField();
+        kaalInput.setPromptText("Kaal");
+        //Buttons
+        Button addButton = new Button("Lisa");
+        Button deleteButton = new Button("Kustuta");
+        //Menu
+        HBox hbox = new HBox();
+        hbox.setPadding(new Insets(10,10,10,10));
+        hbox.setSpacing(10);
+        hbox.getChildren().addAll(nrInput, alusedInput, kaalInput, addButton, deleteButton);
+        //
+        bpane.setBottom(hbox);
 
+        //Nupoude käsklused:
         impordi.setOnAction(event -> {
                 Tellimused tellimused = new Tellimused();
                 tellimused.ImportPopup();
@@ -54,6 +83,28 @@ public class Kasutajaliides {
         impordiveokid.setOnAction(event -> {
             Veokid veokid = new Veokid();
             veokid.ImportPopup();
+        });
+        addButton.setOnAction(event -> {
+            Tellimus tellimus = new Tellimus();
+            //Gets user input from textfields
+            tellimus.setNumber(Integer.parseInt(nrInput.getText()));
+            int n = tellimus.getNumber();
+            tellimus.setAlused(Integer.parseInt(alusedInput.getText()));
+            int a = tellimus.getAlused();
+            tellimus.setKaal(Integer.parseInt(kaalInput.getText()));
+            int k = tellimus.getKaal();
+            //Saves user input to Database also
+            Database db = new Database();
+            db.salvestaTellimus(n, k, a);
+            db.sulgeYhendus();
+            //Updates UI table according to input
+            tabel.updateTable();
+            nrInput.clear();
+            alusedInput.clear();
+            kaalInput.clear();
+        });
+        deleteButton.setOnAction(event -> {
+
         });
     }
 }

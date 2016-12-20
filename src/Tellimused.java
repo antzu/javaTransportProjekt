@@ -64,7 +64,7 @@ public class Tellimused {
                 int kaal = s.nextInt();
                 newTellimused.setKaal(kaal);
                 kaalkokku = kaalkokku + kaal;
-                a.salvestaTellimus(number, kaal, alused, 0);
+                a.salvestaTellimus(number, kaal, alused);
 
             }
         }

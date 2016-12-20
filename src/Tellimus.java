@@ -7,6 +7,13 @@ public class Tellimus {
     Integer alused;
     Integer staatus;
 
+    public Tellimus (){
+        this.kaal = 0;
+        this.alused = 0;
+        this.number = 0;
+        this.staatus = 0;
+    }
+
     public Tellimus(int kaal, int alused, int number) {
         this.kaal = kaal;
         this.alused = alused;
