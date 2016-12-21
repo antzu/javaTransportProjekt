@@ -25,7 +25,7 @@ public class Database {
 
     public void looTellimusedTabel(){
         String sql = "CREATE TABLE IF NOT EXISTS TELLIMUSED (TELLIMUSNR INTEGER, " +
-                "KAAL INTEGER, ALUSED INTEGER, STAATUS INTEGER);";
+                "KAAL INTEGER, ALUSED INTEGER, STAATUS INTEGER, KOORMANR INTEGER);";
         teostaAndmebaasiMuudatus(sql);
     }
     public void looVeokidTabel(){
@@ -77,7 +77,10 @@ public class Database {
         String sql = "UPDATE TELLIMUSED SET STAATUS=('"+k+"') WHERE TELLIMUSNR = ('"+n+"')";
         teostaAndmebaasiMuudatus(sql);
     }
-
+    public void updateTellimusKoormanr(int n, int k){
+        String sql = "UPDATE TELLIMUSED SET KOORMANR=('"+k+"') WHERE TELLIMUSNR = ('"+n+"')";
+        teostaAndmebaasiMuudatus(sql);
+    }
 
     public void sulgeYhendus() {
         try {
@@ -92,11 +95,11 @@ public class Database {
         ArrayList<Tellimus> TellimusteKogu = new ArrayList<>();
         try {
             Statement stat = conn.createStatement();
-            String sql = "SELECT * FROM TELLIMUSED WHERE STAATUS = '0'";
+            String sql = "SELECT * FROM TELLIMUSED"; //WHERE STAATUS = '0'";
             ResultSet rs = stat.executeQuery(sql);
 
             while (rs.next()) {
-                TellimusteKogu.add(new Tellimus(rs.getInt("KAAL"), rs.getInt("ALUSED"), rs.getInt("TELLIMUSNR"), rs.getInt("STAATUS")));
+                TellimusteKogu.add(new Tellimus(rs.getInt("KAAL"), rs.getInt("ALUSED"), rs.getInt("TELLIMUSNR"), rs.getInt("STAATUS"), rs.getInt("KOORMANR")));
             }
 
             rs.close();

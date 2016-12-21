@@ -38,13 +38,18 @@ public class Tabel {
         nrColumn.setCellValueFactory(new PropertyValueFactory<>("number"));
 
         //Staatus column
-        /*TableColumn<Tellimus, Integer> staatusColumn = new TableColumn<>("Staatus");
-        nrColumn.setMinWidth(100);
-        nrColumn.setCellValueFactory(new PropertyValueFactory<>("staatus"));*/
+        TableColumn<Tellimus, Integer> staatusColumn = new TableColumn<>("Staatus");
+        staatusColumn.setMinWidth(100);
+        staatusColumn.setCellValueFactory(new PropertyValueFactory<>("staatus"));
+
+        //Koormanr column
+        TableColumn<Tellimus, Integer> koormanrColumn = new TableColumn<>("KoormaNr");
+        koormanrColumn.setMinWidth(100);
+        koormanrColumn.setCellValueFactory(new PropertyValueFactory<>("koormanr"));
 
         table = new TableView<>();
         table.setItems(getTellimus());
-        table.getColumns().addAll(nrColumn, aluseidColumn, kaalColumn/*, staatusColumn*/);
+        table.getColumns().addAll(nrColumn, aluseidColumn, kaalColumn, staatusColumn, koormanrColumn);
 
     }
     public ObservableList<Tellimus> getTellimus(){
@@ -52,7 +57,7 @@ public class Tabel {
         Tellimused tellimused1 = new Tellimused();
         tellimused1.TellimusedKokku();
         for (int i = 0; i < tellimused1.TellimusteKogu.size(); i++) {
-            tellimused.add(new Tellimus(tellimused1.getKaal(i), tellimused1.getAlused(i), tellimused1.getNumber(i), tellimused1.getStaatus(i)));
+            tellimused.add(tellimused1.TellimusteKogu.get(i));//(new Tellimus(tellimused1.getKaal(i), tellimused1.getAlused(i), tellimused1.getNumber(i), tellimused1.getStaatus(i)));
         }
 
         return tellimused;

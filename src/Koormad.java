@@ -15,6 +15,7 @@ public class Koormad {
     public static ArrayList<Integer> autod;
     public static int [] DATA;
     GetAllSubsetsByStack sets;
+    int koormanr = 1;
 
     public Koormad (){
         getDATA();
@@ -43,9 +44,14 @@ public class Koormad {
     public void getKoormad (int mitu){
         for (int i = 0; i < mitu; i++) {
             getDATA();
-            sets = new GetAllSubsetsByStack(autod.get(i), DATA);
-            sets.toStacklist(autod.get(i));
-            TellimusToKoorem(sets.stackslist.get(0));
+            if (autod.get(i) <= sumDATA(DATA)) {
+                sets = new GetAllSubsetsByStack(autod.get(i), DATA);
+                sets.toStacklist(autod.get(i));
+                TellimusToKoorem(sets.stackslist.get(0));
+            } else {
+                TellimusToKoorem(DATAarray(DATA));
+            }
+            koormanr++;
         }
 
     }
@@ -80,7 +86,22 @@ public class Koormad {
             int j = tellimused.getByAlused((int)stack.get(i));
             tellimused.setStaatus(j, 1);
             a.updateTellimusStaatus(tellimused.getNumber(j), 1);
+            a.updateTellimusKoormanr(tellimused.getNumber(j), koormanr);
         }
         a.sulgeYhendus();
+    }
+    public int sumDATA (int[] DATA){
+        int sum = 0;
+        for (int i = 0; i < DATA.length; i++) {
+           sum += DATA[i];
+        }
+        return sum;
+    }
+    public ArrayList DATAarray (int [] DATA){
+        ArrayList data = new ArrayList();
+        for (int i = 0; i < DATA.length; i++) {
+            data.add(DATA[i]);
+        }
+        return data;
     }
 }

@@ -64,7 +64,7 @@ public class Tellimused {
         }
         for (int i = 1; i <= mitu; i++) {
 
-            Tellimus newTellimused = new Tellimus(0, 0, 0, 0);
+            Tellimus newTellimused = new Tellimus();
             if (s.hasNextInt()) {
                 int number = s.nextInt();
                 newTellimused.setNumber(number);
@@ -75,7 +75,6 @@ public class Tellimused {
                 int kaal = s.nextInt();
                 newTellimused.setKaal(kaal);
                 kaalkokku = kaalkokku + kaal;
-                newTellimused.setStaatus(0);
                 int staatus = 0;
                 a.salvestaTellimus(number, kaal, alused, staatus);
 
