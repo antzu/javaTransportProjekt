@@ -17,6 +17,9 @@ public class Koormad {
     GetAllSubsetsByStack sets;
     int koormanr = 1;
 
+    public void getKoormanr (Database a){
+        koormanr = a.Koormanr();
+    }
     public Koormad (){
         getDATA();
         getAutod();
@@ -27,7 +30,7 @@ public class Koormad {
     }
     public void getDATA (){
         Tellimused tellimused = new Tellimused();
-        tellimused.TellimusedKokku();
+        tellimused.TellimusedKokkuSt();
         DATA = new int[tellimused.TellimusteKogu.size()];
         for (int i = 0; i < tellimused.TellimusteKogu.size(); i++) {
             DATA [i] = tellimused.getAlused(i);
@@ -42,18 +45,25 @@ public class Koormad {
         }
     }
     public void getKoormad (int mitu){
-        for (int i = 0; i < mitu; i++) {
-            getDATA();
-            if (autod.get(i) <= sumDATA(DATA)) {
-                sets = new GetAllSubsetsByStack(autod.get(i), DATA);
-                sets.toStacklist(autod.get(i));
-                TellimusToKoorem(sets.stackslist.get(0));
-            } else {
-                TellimusToKoorem(DATAarray(DATA));
+        if (mitu > autod.size()){
+            ImportPopup();
+        } else {
+            for (int i = 0; i < mitu; i++) {
+                getDATA();
+                if (autod.get(i) <= sumDATA(DATA)) {
+                    sets = new GetAllSubsetsByStack(autod.get(i), DATA);
+                    sets.toStacklist(autod.get(i));
+                    TellimusToKoorem(sets.stackslist.get(0));
+                } else {
+                    TellimusToKoorem(DATAarray(DATA));
+                }
+                koormanr++;
+                Database db = new Database();
+                db.updateKoormanr(koormanr);
+                db.sulgeYhendus();
+                System.out.println("SIIN ON KOORMANR " + koormanr);
             }
-            koormanr++;
         }
-
     }
 
     public void ImportPopup () {
@@ -80,12 +90,14 @@ public class Koormad {
     }
     public void TellimusToKoorem (ArrayList stack){
         Tellimused tellimused = new Tellimused();
-        tellimused.TellimusedKokku();
+        tellimused.TellimusedKokkuSt();
         Database a = new Database();
         for (int i = 0; i < stack.size(); i++) {
             int j = tellimused.getByAlused((int)stack.get(i));
             tellimused.setStaatus(j, 1);
             a.updateTellimusStaatus(tellimused.getNumber(j), 1);
+            getKoormanr(a);
+            System.out.println("SIIN AGA ON KOORMANR " + koormanr);
             a.updateTellimusKoormanr(tellimused.getNumber(j), koormanr);
         }
         a.sulgeYhendus();

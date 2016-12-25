@@ -33,36 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Database.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Database.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="101" column="154" selection-start-line="101" selection-start-column="154" selection-end-line="101" selection-end-column="154" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#looYhendus#0;class#Database#0" expanded="false" />
-                <element signature="method#looTellimusedTabel#0;class#Database#0" expanded="false" />
-                <element signature="method#looVeokidTabel#0;class#Database#0" expanded="false" />
-                <element signature="method#teostaAndmebaasiMuudatus#0;class#Database#0" expanded="false" />
-                <element signature="method#kustutaTellimus#0;class#Database#0" expanded="false" />
-                <element signature="method#salvestaTellimus#0;class#Database#0" expanded="false" />
-                <element signature="method#salvestaVeok#0;class#Database#0" expanded="false" />
-                <element signature="method#updateTellimusNr#0;class#Database#0" expanded="false" />
-                <element signature="method#updateTellimusKaal#0;class#Database#0" expanded="false" />
-                <element signature="method#updateTellimusAlused#0;class#Database#0" expanded="false" />
-                <element signature="method#updateTellimusStaatus#0;class#Database#0" expanded="false" />
-                <element signature="method#sulgeYhendus#0;class#Database#0" expanded="false" />
-                <element signature="method#VeokiteKogu#0;class#Database#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Kasutajaliides.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Kasutajaliides.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="105" column="34" selection-start-line="105" selection-start-column="34" selection-end-line="105" selection-end-column="34" />
+            <state relative-caret-position="-850">
+              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#Kasutajaliides#0;class#Kasutajaliides#0" expanded="false" />
@@ -74,13 +49,11 @@
       <file leaf-file-name="GetAllSubsetsByStack.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GetAllSubsetsByStack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1244">
-              <caret line="79" column="40" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
+            <state relative-caret-position="136">
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#523#524#0" expanded="true" />
-                <element signature="e#562#563#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,9 +62,30 @@
       <file leaf-file-name="Tellimus.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tellimus.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
+            <state relative-caret-position="561">
               <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-              <folding />
+              <folding>
+                <element signature="e#795#796#0" expanded="false" />
+                <element signature="e#824#825#0" expanded="false" />
+                <element signature="e#864#865#0" expanded="false" />
+                <element signature="e#900#901#0" expanded="false" />
+                <element signature="e#927#928#0" expanded="false" />
+                <element signature="e#954#955#0" expanded="false" />
+                <element signature="e#990#991#0" expanded="false" />
+                <element signature="e#1022#1023#0" expanded="false" />
+                <element signature="e#1051#1052#0" expanded="false" />
+                <element signature="e#1080#1081#0" expanded="false" />
+                <element signature="e#1120#1121#0" expanded="false" />
+                <element signature="e#1156#1157#0" expanded="false" />
+                <element signature="e#1186#1187#0" expanded="false" />
+                <element signature="e#1216#1217#0" expanded="false" />
+                <element signature="e#1252#1253#0" expanded="false" />
+                <element signature="e#1283#1284#0" expanded="false" />
+                <element signature="e#1332#1333#0" expanded="false" />
+                <element signature="e#1372#1373#0" expanded="false" />
+                <element signature="e#1415#1416#0" expanded="false" />
+                <element signature="e#1453#1454#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -99,10 +93,12 @@
       <file leaf-file-name="Koormad.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Koormad.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+            <state relative-caret-position="156">
+              <caret line="98" column="27" selection-start-line="98" selection-start-column="27" selection-end-line="98" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#490#491#0" expanded="true" />
+                <element signature="e#529#530#0" expanded="true" />
                 <element signature="method#ImportPopup#0;class#Koormad#0" expanded="false" />
                 <element signature="method#sumDATA#0;class#Koormad#0" expanded="false" />
                 <element signature="method#DATAarray#0;class#Koormad#0" expanded="false" />
@@ -136,11 +132,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="901">
               <caret line="59" column="60" selection-start-line="59" selection-start-column="60" selection-end-line="59" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2444#2445#0" expanded="true" />
-                <element signature="e#2489#2490#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -148,16 +140,36 @@
       <file leaf-file-name="Tellimused.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tellimused.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="769">
-              <caret line="76" column="45" selection-start-line="76" selection-start-column="45" selection-end-line="76" selection-end-column="45" />
+            <state relative-caret-position="255">
+              <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#Tellimused#0;class#Tellimused#0" expanded="false" />
-                <element signature="e#933#934#0" expanded="true" />
-                <element signature="e#990#991#0" expanded="true" />
-                <element signature="e#1033#1034#0" expanded="true" />
-                <element signature="e#1084#1085#0" expanded="true" />
                 <element signature="method#getByAlused#0;class#Tellimused#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Database.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Database.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="90" column="58" selection-start-line="90" selection-start-column="58" selection-end-line="90" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#looYhendus#0;class#Database#0" expanded="false" />
+                <element signature="method#kustutaTellimus#0;class#Database#0" expanded="false" />
+                <element signature="method#salvestaTellimus#0;class#Database#0" expanded="false" />
+                <element signature="method#updateTellimusNr#0;class#Database#0" expanded="false" />
+                <element signature="method#updateTellimusKaal#0;class#Database#0" expanded="false" />
+                <element signature="method#updateTellimusAlused#0;class#Database#0" expanded="false" />
+                <element signature="method#updateTellimusStaatus#0;class#Database#0" expanded="false" />
+                <element signature="method#sulgeYhendus#0;class#Database#0" expanded="false" />
+                <element signature="method#TellimusteKogu#0;class#Database#0" expanded="false" />
+                <element signature="method#TellimusteKoguSt#0;class#Database#0" expanded="false" />
+                <element signature="method#VeokiteKogu#0;class#Database#0" expanded="false" />
+                <element signature="method#Koormanr#0;class#Database#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -185,12 +197,12 @@
         <option value="$PROJECT_DIR$/src/Veok.java" />
         <option value="$PROJECT_DIR$/src/Veokid.java" />
         <option value="$PROJECT_DIR$/src/GetAllSubsetsByStack.java" />
-        <option value="$PROJECT_DIR$/src/Kasutajaliides.java" />
         <option value="$PROJECT_DIR$/src/Tabel.java" />
         <option value="$PROJECT_DIR$/src/Tellimus.java" />
+        <option value="$PROJECT_DIR$/src/Kasutajaliides.java" />
         <option value="$PROJECT_DIR$/src/Tellimused.java" />
-        <option value="$PROJECT_DIR$/src/Database.java" />
         <option value="$PROJECT_DIR$/src/Koormad.java" />
+        <option value="$PROJECT_DIR$/src/Database.java" />
       </list>
     </option>
   </component>
@@ -225,7 +237,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -260,8 +271,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -551,7 +563,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="1" width="1376" height="734" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -560,18 +572,18 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2545757" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2545757" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23076923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12006079" sideWeight="0.765625" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12006079" sideWeight="0.75223213" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.327787" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39933443" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12006079" sideWeight="0.234375" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12006079" sideWeight="0.24776785" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -592,7 +604,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -601,6 +613,140 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#looYhendus#0;class#Database#0" expanded="false" />
+            <element signature="method#kustutaTellimus#0;class#Database#0" expanded="false" />
+            <element signature="method#salvestaTellimus#0;class#Database#0" expanded="false" />
+            <element signature="method#updateTellimusNr#0;class#Database#0" expanded="false" />
+            <element signature="method#updateTellimusKaal#0;class#Database#0" expanded="false" />
+            <element signature="method#updateTellimusAlused#0;class#Database#0" expanded="false" />
+            <element signature="method#updateTellimusStaatus#0;class#Database#0" expanded="false" />
+            <element signature="method#sulgeYhendus#0;class#Database#0" expanded="false" />
+            <element signature="method#TellimusteKogu#0;class#Database#0" expanded="false" />
+            <element signature="method#TellimusteKoguSt#0;class#Database#0" expanded="false" />
+            <element signature="method#VeokiteKogu#0;class#Database#0" expanded="false" />
+            <element signature="method#Koormanr#0;class#Database#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Kasutajaliides.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1649">
+          <caret line="105" column="34" selection-start-line="105" selection-start-column="34" selection-end-line="105" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Kasutajaliides#0;class#Kasutajaliides#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GetAllSubsetsByStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="79" column="40" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tellimus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+          <folding>
+            <element signature="e#795#796#0" expanded="false" />
+            <element signature="e#824#825#0" expanded="false" />
+            <element signature="e#864#865#0" expanded="false" />
+            <element signature="e#900#901#0" expanded="false" />
+            <element signature="e#927#928#0" expanded="false" />
+            <element signature="e#954#955#0" expanded="false" />
+            <element signature="e#990#991#0" expanded="false" />
+            <element signature="e#1022#1023#0" expanded="false" />
+            <element signature="e#1051#1052#0" expanded="false" />
+            <element signature="e#1080#1081#0" expanded="false" />
+            <element signature="e#1120#1121#0" expanded="false" />
+            <element signature="e#1156#1157#0" expanded="false" />
+            <element signature="e#1186#1187#0" expanded="false" />
+            <element signature="e#1216#1217#0" expanded="false" />
+            <element signature="e#1252#1253#0" expanded="false" />
+            <element signature="e#1283#1284#0" expanded="false" />
+            <element signature="e#1332#1333#0" expanded="false" />
+            <element signature="e#1372#1373#0" expanded="false" />
+            <element signature="e#1415#1416#0" expanded="false" />
+            <element signature="e#1453#1454#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Koormad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="85" column="62" selection-start-line="85" selection-start-column="62" selection-end-line="85" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#529#530#0" expanded="true" />
+            <element signature="method#ImportPopup#0;class#Koormad#0" expanded="false" />
+            <element signature="method#sumDATA#0;class#Koormad#0" expanded="false" />
+            <element signature="method#DATAarray#0;class#Koormad#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tabel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="59" column="60" selection-start-line="59" selection-start-column="60" selection-end-line="59" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tellimused.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="76" column="45" selection-start-line="76" selection-start-column="45" selection-end-line="76" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Tellimused#0;class#Tellimused#0" expanded="false" />
+            <element signature="method#getByAlused#0;class#Tellimused#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -629,18 +775,17 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#looYhendus#0;class#Database#0" expanded="false" />
-            <element signature="method#looTellimusedTabel#0;class#Database#0" expanded="false" />
-            <element signature="method#looVeokidTabel#0;class#Database#0" expanded="false" />
-            <element signature="method#teostaAndmebaasiMuudatus#0;class#Database#0" expanded="false" />
             <element signature="method#kustutaTellimus#0;class#Database#0" expanded="false" />
             <element signature="method#salvestaTellimus#0;class#Database#0" expanded="false" />
-            <element signature="method#salvestaVeok#0;class#Database#0" expanded="false" />
             <element signature="method#updateTellimusNr#0;class#Database#0" expanded="false" />
             <element signature="method#updateTellimusKaal#0;class#Database#0" expanded="false" />
             <element signature="method#updateTellimusAlused#0;class#Database#0" expanded="false" />
             <element signature="method#updateTellimusStaatus#0;class#Database#0" expanded="false" />
             <element signature="method#sulgeYhendus#0;class#Database#0" expanded="false" />
+            <element signature="method#TellimusteKogu#0;class#Database#0" expanded="false" />
+            <element signature="method#TellimusteKoguSt#0;class#Database#0" expanded="false" />
             <element signature="method#VeokiteKogu#0;class#Database#0" expanded="false" />
+            <element signature="method#Koormanr#0;class#Database#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -649,7 +794,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="43" selection-end-column="1" />
-          <folding />
+          <folding>
+            <element signature="e#795#796#0" expanded="false" />
+            <element signature="e#824#825#0" expanded="false" />
+            <element signature="e#864#865#0" expanded="false" />
+            <element signature="e#900#901#0" expanded="false" />
+            <element signature="e#927#928#0" expanded="false" />
+            <element signature="e#954#955#0" expanded="false" />
+            <element signature="e#990#991#0" expanded="false" />
+            <element signature="e#1022#1023#0" expanded="false" />
+            <element signature="e#1051#1052#0" expanded="false" />
+            <element signature="e#1080#1081#0" expanded="false" />
+            <element signature="e#1120#1121#0" expanded="false" />
+            <element signature="e#1156#1157#0" expanded="false" />
+            <element signature="e#1186#1187#0" expanded="false" />
+            <element signature="e#1216#1217#0" expanded="false" />
+            <element signature="e#1252#1253#0" expanded="false" />
+            <element signature="e#1283#1284#0" expanded="false" />
+            <element signature="e#1332#1333#0" expanded="false" />
+            <element signature="e#1372#1373#0" expanded="false" />
+            <element signature="e#1415#1416#0" expanded="false" />
+            <element signature="e#1453#1454#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -657,11 +823,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2444#2445#0" expanded="true" />
-            <element signature="e#2489#2490#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -680,10 +842,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Tellimused#0;class#Tellimused#0" expanded="false" />
-            <element signature="e#933#934#0" expanded="true" />
-            <element signature="e#990#991#0" expanded="true" />
-            <element signature="e#1033#1034#0" expanded="true" />
-            <element signature="e#1084#1085#0" expanded="true" />
             <element signature="method#getByAlused#0;class#Tellimused#0" expanded="false" />
           </folding>
         </state>
@@ -694,12 +852,14 @@
         <state relative-caret-position="153">
           <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
           <folding>
-            <element signature="e#780#781#0" expanded="true" />
-            <element signature="e#824#825#0" expanded="true" />
-            <element signature="e#968#969#0" expanded="true" />
-            <element signature="e#1016#1017#0" expanded="true" />
-            <element signature="e#1072#1073#0" expanded="true" />
-            <element signature="e#1124#1125#0" expanded="true" />
+            <element signature="e#1158#1159#0" expanded="false" />
+            <element signature="e#1191#1192#0" expanded="false" />
+            <element signature="e#1225#1226#0" expanded="false" />
+            <element signature="e#1258#1259#0" expanded="false" />
+            <element signature="e#1294#1295#0" expanded="false" />
+            <element signature="e#1329#1330#0" expanded="false" />
+            <element signature="e#1367#1368#0" expanded="false" />
+            <element signature="e#1404#1405#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -709,7 +869,7 @@
         <state relative-caret-position="170">
           <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#VeokidImport#0;class#Veokid#0" expanded="false" />
             <element signature="method#ImportPopup#0;class#Veokid#0" expanded="false" />
           </folding>
@@ -723,8 +883,6 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -746,10 +904,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Tellimused#0;class#Tellimused#0" expanded="false" />
-            <element signature="e#933#934#0" expanded="true" />
-            <element signature="e#990#991#0" expanded="true" />
-            <element signature="e#1033#1034#0" expanded="true" />
-            <element signature="e#1084#1085#0" expanded="true" />
             <element signature="method#getByAlused#0;class#Tellimused#0" expanded="false" />
           </folding>
         </state>
@@ -759,7 +913,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#795#796#0" expanded="false" />
+            <element signature="e#824#825#0" expanded="false" />
+            <element signature="e#864#865#0" expanded="false" />
+            <element signature="e#900#901#0" expanded="false" />
+            <element signature="e#927#928#0" expanded="false" />
+            <element signature="e#954#955#0" expanded="false" />
+            <element signature="e#990#991#0" expanded="false" />
+            <element signature="e#1022#1023#0" expanded="false" />
+            <element signature="e#1051#1052#0" expanded="false" />
+            <element signature="e#1080#1081#0" expanded="false" />
+            <element signature="e#1120#1121#0" expanded="false" />
+            <element signature="e#1156#1157#0" expanded="false" />
+            <element signature="e#1186#1187#0" expanded="false" />
+            <element signature="e#1216#1217#0" expanded="false" />
+            <element signature="e#1252#1253#0" expanded="false" />
+            <element signature="e#1283#1284#0" expanded="false" />
+            <element signature="e#1332#1333#0" expanded="false" />
+            <element signature="e#1372#1373#0" expanded="false" />
+            <element signature="e#1415#1416#0" expanded="false" />
+            <element signature="e#1453#1454#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -780,10 +955,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Tellimused#0;class#Tellimused#0" expanded="false" />
-            <element signature="e#933#934#0" expanded="true" />
-            <element signature="e#990#991#0" expanded="true" />
-            <element signature="e#1033#1034#0" expanded="true" />
-            <element signature="e#1084#1085#0" expanded="true" />
             <element signature="method#getByAlused#0;class#Tellimused#0" expanded="false" />
           </folding>
         </state>
@@ -793,7 +964,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#795#796#0" expanded="false" />
+            <element signature="e#824#825#0" expanded="false" />
+            <element signature="e#864#865#0" expanded="false" />
+            <element signature="e#900#901#0" expanded="false" />
+            <element signature="e#927#928#0" expanded="false" />
+            <element signature="e#954#955#0" expanded="false" />
+            <element signature="e#990#991#0" expanded="false" />
+            <element signature="e#1022#1023#0" expanded="false" />
+            <element signature="e#1051#1052#0" expanded="false" />
+            <element signature="e#1080#1081#0" expanded="false" />
+            <element signature="e#1120#1121#0" expanded="false" />
+            <element signature="e#1156#1157#0" expanded="false" />
+            <element signature="e#1186#1187#0" expanded="false" />
+            <element signature="e#1216#1217#0" expanded="false" />
+            <element signature="e#1252#1253#0" expanded="false" />
+            <element signature="e#1283#1284#0" expanded="false" />
+            <element signature="e#1332#1333#0" expanded="false" />
+            <element signature="e#1372#1373#0" expanded="false" />
+            <element signature="e#1415#1416#0" expanded="false" />
+            <element signature="e#1453#1454#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -801,7 +993,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
           <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -824,7 +1015,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1921">
           <caret line="304" column="25" selection-start-line="304" selection-start-column="25" selection-end-line="304" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -833,7 +1023,7 @@
         <state relative-caret-position="594">
           <caret line="113" column="44" selection-start-line="113" selection-start-column="44" selection-end-line="113" selection-end-column="44" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#VeokidImport#0;class#Veokid#0" expanded="false" />
             <element signature="method#ImportPopup#0;class#Veokid#0" expanded="false" />
           </folding>
@@ -845,24 +1035,14 @@
         <state relative-caret-position="833">
           <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
           <folding>
-            <element signature="e#1158#1159#0" expanded="true" />
-            <element signature="e#1191#1192#0" expanded="true" />
-            <element signature="e#1225#1226#0" expanded="true" />
-            <element signature="e#1258#1259#0" expanded="true" />
-            <element signature="e#1294#1295#0" expanded="true" />
-            <element signature="e#1329#1330#0" expanded="true" />
-            <element signature="e#1367#1368#0" expanded="true" />
-            <element signature="e#1404#1405#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1158#1159#0" expanded="false" />
+            <element signature="e#1191#1192#0" expanded="false" />
+            <element signature="e#1225#1226#0" expanded="false" />
+            <element signature="e#1258#1259#0" expanded="false" />
+            <element signature="e#1294#1295#0" expanded="false" />
+            <element signature="e#1329#1330#0" expanded="false" />
+            <element signature="e#1367#1368#0" expanded="false" />
+            <element signature="e#1404#1405#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -883,74 +1063,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GetAllSubsetsByStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1244">
-          <caret line="79" column="40" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kasutajaliides.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="105" column="34" selection-start-line="105" selection-start-column="34" selection-end-line="105" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Kasutajaliides#0;class#Kasutajaliides#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tellimused.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="769">
-          <caret line="76" column="45" selection-start-line="76" selection-start-column="45" selection-end-line="76" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Tellimused#0;class#Tellimused#0" expanded="false" />
-            <element signature="e#933#934#0" expanded="true" />
-            <element signature="e#990#991#0" expanded="true" />
-            <element signature="e#1033#1034#0" expanded="true" />
-            <element signature="e#1084#1085#0" expanded="true" />
-            <element signature="method#getByAlused#0;class#Tellimused#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="101" column="154" selection-start-line="101" selection-start-column="154" selection-end-line="101" selection-end-column="154" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#looYhendus#0;class#Database#0" expanded="false" />
-            <element signature="method#looTellimusedTabel#0;class#Database#0" expanded="false" />
-            <element signature="method#looVeokidTabel#0;class#Database#0" expanded="false" />
-            <element signature="method#teostaAndmebaasiMuudatus#0;class#Database#0" expanded="false" />
-            <element signature="method#kustutaTellimus#0;class#Database#0" expanded="false" />
-            <element signature="method#salvestaTellimus#0;class#Database#0" expanded="false" />
-            <element signature="method#salvestaVeok#0;class#Database#0" expanded="false" />
-            <element signature="method#updateTellimusNr#0;class#Database#0" expanded="false" />
-            <element signature="method#updateTellimusKaal#0;class#Database#0" expanded="false" />
-            <element signature="method#updateTellimusAlused#0;class#Database#0" expanded="false" />
-            <element signature="method#updateTellimusStaatus#0;class#Database#0" expanded="false" />
-            <element signature="method#sulgeYhendus#0;class#Database#0" expanded="false" />
-            <element signature="method#VeokiteKogu#0;class#Database#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tellimus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
+        <state relative-caret-position="561">
           <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="e#795#796#0" expanded="false" />
+            <element signature="e#824#825#0" expanded="false" />
+            <element signature="e#864#865#0" expanded="false" />
+            <element signature="e#900#901#0" expanded="false" />
+            <element signature="e#927#928#0" expanded="false" />
+            <element signature="e#954#955#0" expanded="false" />
+            <element signature="e#990#991#0" expanded="false" />
+            <element signature="e#1022#1023#0" expanded="false" />
+            <element signature="e#1051#1052#0" expanded="false" />
+            <element signature="e#1080#1081#0" expanded="false" />
+            <element signature="e#1120#1121#0" expanded="false" />
+            <element signature="e#1156#1157#0" expanded="false" />
+            <element signature="e#1186#1187#0" expanded="false" />
+            <element signature="e#1216#1217#0" expanded="false" />
+            <element signature="e#1252#1253#0" expanded="false" />
+            <element signature="e#1283#1284#0" expanded="false" />
+            <element signature="e#1332#1333#0" expanded="false" />
+            <element signature="e#1372#1373#0" expanded="false" />
+            <element signature="e#1415#1416#0" expanded="false" />
+            <element signature="e#1453#1454#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -958,20 +1096,84 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="901">
           <caret line="59" column="60" selection-start-line="59" selection-start-column="60" selection-end-line="59" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2444#2445#0" expanded="true" />
-            <element signature="e#2489#2490#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Kasutajaliides.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-850">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Kasutajaliides#0;class#Kasutajaliides#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GetAllSubsetsByStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tellimused.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Tellimused#0;class#Tellimused#0" expanded="false" />
+            <element signature="method#getByAlused#0;class#Tellimused#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="90" column="58" selection-start-line="90" selection-start-column="58" selection-end-line="90" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#looYhendus#0;class#Database#0" expanded="false" />
+            <element signature="method#kustutaTellimus#0;class#Database#0" expanded="false" />
+            <element signature="method#salvestaTellimus#0;class#Database#0" expanded="false" />
+            <element signature="method#updateTellimusNr#0;class#Database#0" expanded="false" />
+            <element signature="method#updateTellimusKaal#0;class#Database#0" expanded="false" />
+            <element signature="method#updateTellimusAlused#0;class#Database#0" expanded="false" />
+            <element signature="method#updateTellimusStaatus#0;class#Database#0" expanded="false" />
+            <element signature="method#sulgeYhendus#0;class#Database#0" expanded="false" />
+            <element signature="method#TellimusteKogu#0;class#Database#0" expanded="false" />
+            <element signature="method#TellimusteKoguSt#0;class#Database#0" expanded="false" />
+            <element signature="method#VeokiteKogu#0;class#Database#0" expanded="false" />
+            <element signature="method#Koormanr#0;class#Database#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Koormad.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        <state relative-caret-position="156">
+          <caret line="98" column="27" selection-start-line="98" selection-start-column="27" selection-end-line="98" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#529#530#0" expanded="true" />
             <element signature="method#ImportPopup#0;class#Koormad#0" expanded="false" />
             <element signature="method#sumDATA#0;class#Koormad#0" expanded="false" />
             <element signature="method#DATAarray#0;class#Koormad#0" expanded="false" />

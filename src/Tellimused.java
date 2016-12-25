@@ -54,6 +54,12 @@ public class Tellimused {
         System.out.println(TellimusteKogu);
         a.sulgeYhendus();
     }
+    public void TellimusedKokkuSt() {
+        Database a = new Database();
+        TellimusteKogu = a.TellimusteKoguSt(0);
+        System.out.println(TellimusteKogu);
+        a.sulgeYhendus();
+    }
     public void TellimusedImport(int mitu) throws FileNotFoundException {
         Database a = new Database();
         Scanner s = null;

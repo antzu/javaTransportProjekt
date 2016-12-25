@@ -12,6 +12,8 @@ public class Database {
         looYhendus();
         looTellimusedTabel();
         looVeokidTabel();
+        looKoormanr();
+        updateKoormanr(1);
     }
     private void looYhendus() {
         try {
@@ -21,6 +23,10 @@ public class Database {
             System.err.println( e.getClass().getName() + ": " + e.getMessage() );
         }
         System.out.println("Opened database successfully");
+    }
+    public void looKoormanr(){
+        String sql = "CREATE TABLE IF NOT EXISTS KOORMAD (NUMBER INTEGER);";
+        teostaAndmebaasiMuudatus(sql);
     }
 
     public void looTellimusedTabel(){
@@ -81,6 +87,10 @@ public class Database {
         String sql = "UPDATE TELLIMUSED SET KOORMANR=('"+k+"') WHERE TELLIMUSNR = ('"+n+"')";
         teostaAndmebaasiMuudatus(sql);
     }
+    public void updateKoormanr(int n){
+        String sql = "UPDATE KOORMAD SET NUMBER=('"+n+"')";
+        teostaAndmebaasiMuudatus(sql);
+    }
 
     public void sulgeYhendus() {
         try {
@@ -111,7 +121,28 @@ public class Database {
             System.exit(0);
         }
         return TellimusteKogu;
-    } //https://github.com/luksti/ActionBoard/blob/master/src/Andmebaas.java
+    }
+    public ArrayList<Tellimus> TellimusteKoguSt (int i){
+        ArrayList<Tellimus> TellimusteKogu = new ArrayList<>();
+        try {
+            Statement stat = conn.createStatement();
+            String sql = "SELECT * FROM TELLIMUSED WHERE STAATUS = ('"+i+"')";
+            ResultSet rs = stat.executeQuery(sql);
+
+            while (rs.next()) {
+                TellimusteKogu.add(new Tellimus(rs.getInt("KAAL"), rs.getInt("ALUSED"), rs.getInt("TELLIMUSNR"), rs.getInt("STAATUS"), rs.getInt("KOORMANR")));
+            }
+
+            rs.close();
+            stat.close();
+
+            return TellimusteKogu;
+        } catch (SQLException e){
+            e.printStackTrace();
+            System.exit(0);
+        }
+        return TellimusteKogu;
+    }
     public ArrayList<Veok> VeokiteKogu (){
         ArrayList<Veok> VeokiteKogu = new ArrayList<>();
         try {
@@ -132,6 +163,25 @@ public class Database {
             System.exit(0);
         }
         return VeokiteKogu;
-    } //https://github.com/luksti/ActionBoard/blob/master/src/Andmebaas.java
+    }
+    public int Koormanr (){
+        int nr = 0;
+        try {
+            Statement stat = conn.createStatement();
+            String sql = "SELECT * FROM KOORMAD";
+            ResultSet rs = stat.executeQuery(sql);
+
+            nr = rs.getInt("NUMBER");
+
+            rs.close();
+            stat.close();
+
+            return nr;
+        } catch (SQLException e){
+            e.printStackTrace();
+            System.exit(0);
+        }
+        return nr;
+    }
 }
 

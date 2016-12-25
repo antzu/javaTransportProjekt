@@ -25,7 +25,7 @@ public class Kasutajaliides {
     }
     public static void setup () throws Exception {
         bpane = new BorderPane();
-        sc = new Scene(bpane, 600, 600);
+        sc = new Scene(bpane, 800, 600);
         stage.setScene(sc);
         stage.setTitle("Transpordiplaneerija");
         stage.show();
