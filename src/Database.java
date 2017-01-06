@@ -12,8 +12,6 @@ public class Database {
         looYhendus();
         looTellimusedTabel();
         looVeokidTabel();
-        looKoormanr();
-        updateKoormanr(1);
     }
     private void looYhendus() {
         try {
@@ -23,10 +21,6 @@ public class Database {
             System.err.println( e.getClass().getName() + ": " + e.getMessage() );
         }
         System.out.println("Opened database successfully");
-    }
-    public void looKoormanr(){
-        String sql = "CREATE TABLE IF NOT EXISTS KOORMAD (NUMBER INTEGER, LAMP INTEGER);";
-        teostaAndmebaasiMuudatus(sql);
     }
 
     public void looTellimusedTabel(){
@@ -83,10 +77,6 @@ public class Database {
     }
     public void updateTellimusKoormanr(int n, int k){
         String sql = "UPDATE TELLIMUSED SET KOORMANR=('"+k+"') WHERE TELLIMUSNR = ('"+n+"')";
-        teostaAndmebaasiMuudatus(sql);
-    }
-    public void updateKoormanr(int n){
-        String sql = "UPDATE KOORMAD SET NUMBER=('"+n+"') WHERE LAMP = ('"+0+"') ";
         teostaAndmebaasiMuudatus(sql);
     }
 
@@ -166,20 +156,20 @@ public class Database {
         int nr = 0;
         try {
             Statement stat = conn.createStatement();
-            String sql = "SELECT * FROM KOORMAD";
+            String sql = "SELECT max(KOORMANR) FROM TELLIMUSED";
             ResultSet rs = stat.executeQuery(sql);
 
-            nr = rs.getInt("NUMBER");
+            nr = rs.getInt("max(KOORMANR)");
 
             rs.close();
             stat.close();
 
-            return nr;
+            return nr+1;
         } catch (SQLException e){
             e.printStackTrace();
             System.exit(0);
         }
-        return nr;
+        return nr+1;
     }
 }
 

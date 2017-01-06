@@ -17,10 +17,17 @@ public class Koormad {
     GetAllSubsetsByStack sets;
     int koormanr = 1;
 
-    public void getKoormanr (Database a){
-        koormanr = a.Koormanr();
+    public void getKoormanr (){
+        Database a = new Database();
+        if (a.Koormanr() != 0) {
+            koormanr = a.Koormanr();
+        } else {
+            koormanr = 1;
+        }
+        a.sulgeYhendus();
     }
     public Koormad (){
+        getKoormanr();
         getDATA(); //muudab Tellimustekogu algoritmi jaoks sobilikule kujule
         getAutod(); //Teeb veokitelistist array, mis koosneb vaid alusekohtadest, muidu on autodel rohkem parameetreid
         //System.out.println(Arrays.toString(DATA));
@@ -58,12 +65,7 @@ public class Koormad {
                     TellimusToKoorem(DATAarray(DATA));
                 }
                 koormanr++;
-                System.out.println("ENNE UPDATE " +koormanr);
-                Database db = new Database();
-                db.updateKoormanr(koormanr);
-                db.sulgeYhendus();
-                Database db2 = new Database();
-                System.out.println("PEALE UPDATE " + db2.Koormanr());
+
             }
         }
     }
@@ -97,8 +99,8 @@ public class Koormad {
         for (int i = 0; i < stack.size(); i++) {
             int j = tellimused.getByAlused((int)stack.get(i));
             tellimused.setStaatus(j, 1);
+
             a.updateTellimusStaatus(tellimused.getNumber(j), 1);
-            getKoormanr(a);
             a.updateTellimusKoormanr(tellimused.getNumber(j), koormanr);
         }
         a.sulgeYhendus();
