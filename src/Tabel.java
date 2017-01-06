@@ -13,6 +13,7 @@ import javafx.scene.layout.VBox;
 public class Tabel {
 
     TableView<Tellimus> table;
+    TableView<Veok> table2;
 
 
     public Tabel () throws Exception {
@@ -52,6 +53,22 @@ public class Tabel {
         table.setItems(getTellimus());
         table.getColumns().addAll(nrColumn, aluseidColumn, kaalColumn, staatusColumn, koormanrColumn);
 
+        //Veokid kandevõime
+        TableColumn<Veok, Integer> kandeColumn = new TableColumn<>("Kandevoime");
+        kandeColumn.setMinWidth(200);
+        kandeColumn.setCellValueFactory(new PropertyValueFactory<>("kandevoime"));
+        //Veokid alusekohti
+        TableColumn<Veok, Integer> aluseColumn = new TableColumn<>("Alusekohti");
+        aluseColumn.setMinWidth(200);
+        aluseColumn.setCellValueFactory(new PropertyValueFactory<>("alusekohti"));
+        //Veokid maxtellimusi
+        TableColumn<Veok, Integer> maxtellimusiColumn = new TableColumn<>("Maxtellimusi");
+        maxtellimusiColumn.setMinWidth(200);
+        maxtellimusiColumn.setCellValueFactory(new PropertyValueFactory<>("maxtellimusi"));
+
+        table2 = new TableView<>();
+        table2.setItems(getVeok());
+        table2.getColumns().addAll(kandeColumn, aluseColumn, maxtellimusiColumn);
     }
     public ObservableList<Tellimus> getTellimus(){
         ObservableList<Tellimus> tellimused = FXCollections.observableArrayList();
@@ -63,7 +80,18 @@ public class Tabel {
 
         return tellimused;
     }
+    public ObservableList<Veok> getVeok(){
+        ObservableList<Veok> veokid = FXCollections.observableArrayList();
+        Veokid veokid1 = new Veokid();
+        veokid1.VeokidKokku();
+        for (int i = 0; i < veokid1.VeokiteKogu.size(); i++) {
+            veokid.add(veokid1.VeokiteKogu.get(i));//(new Tellimus(tellimused1.getKaal(i), tellimused1.getAlused(i), tellimused1.getNumber(i), tellimused1.getStaatus(i)));
+        }
+
+        return veokid;
+    }
     public void updateTable (){
         table.setItems(getTellimus());
+        table2.setItems(getVeok());
     }
 }

@@ -48,7 +48,7 @@ public class Kasutajaliides {
         //Keskmine tabeli paneel ülemine osa:
         Tabel tabel = new Tabel();
         VBox tabeliala = new VBox();
-        tabeliala.getChildren().addAll(tabel.table);
+        tabeliala.getChildren().addAll(tabel.table2);
         bpane.setCenter(tabeliala);
 
         //Keskmine tabeli paneel alumine osa (menüü):
@@ -71,8 +71,9 @@ public class Kasutajaliides {
         hbox.setSpacing(10);
         hbox.getChildren().addAll(nrInput, alusedInput, kaalInput, addButton, deleteButton);
         //
-        
-        bpane.setBottom(hbox);
+        VBox bottom = new VBox();
+        bottom.getChildren().addAll(hbox, tabel.table);
+        bpane.setBottom(bottom);
 
         //Nupoude käsklused:
         impordi.setOnAction(event -> {
