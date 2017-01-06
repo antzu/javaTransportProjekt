@@ -2,9 +2,12 @@
 # Transpordiplaneerimine
 
 Tegemist rakendusega, mis võtab sisendiks:
->1. Veokid, tingimustega: hind, max tellimusi, max aluseid, max kaal
-2. Tellimused, tingimustega: tellimuste arv, kaal per tellimus, alused per tellimus
-3. Muud piirangud.
+>1. Veokid
+2. Tellimused
+Sisendi saab programm .csv failidest
 
-Vastavalt kriteeriumitele planeerib parima lahenduse tellmuste jagamiseks veokite vahel.
+Programmis kuvatakse saadud sisend tabelites, kus saab lisada ja kustutada tellimusi.
+Samuti salvestatakse andmed andmebaasis.
+
+Arvestades veokite alusekohti ning igal tellimusel olevaid aluseid, genereerib programm koormad autodele.
 

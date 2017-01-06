@@ -23,8 +23,8 @@ public class Koormad {
     public Koormad (){
         getDATA(); //muudab Tellimustekogu algoritmi jaoks sobilikule kujule
         getAutod(); //Teeb veokitelistist array, mis koosneb vaid alusekohtadest, muidu on autodel rohkem parameetreid
-        System.out.println(Arrays.toString(DATA));
-        System.out.println(autod);
+        //System.out.println(Arrays.toString(DATA));
+        //System.out.println(autod);
         ImportPopup(); //Küsib mitu koormat tahad teha ning alustab algoritmi
 
     }
@@ -58,10 +58,12 @@ public class Koormad {
                     TellimusToKoorem(DATAarray(DATA));
                 }
                 koormanr++;
+                System.out.println("ENNE UPDATE " +koormanr);
                 Database db = new Database();
                 db.updateKoormanr(koormanr);
                 db.sulgeYhendus();
-                System.out.println("SIIN ON KOORMANR " + koormanr);
+                Database db2 = new Database();
+                System.out.println("PEALE UPDATE " + db2.Koormanr());
             }
         }
     }
@@ -97,7 +99,6 @@ public class Koormad {
             tellimused.setStaatus(j, 1);
             a.updateTellimusStaatus(tellimused.getNumber(j), 1);
             getKoormanr(a);
-            System.out.println("SIIN AGA ON KOORMANR " + koormanr);
             a.updateTellimusKoormanr(tellimused.getNumber(j), koormanr);
         }
         a.sulgeYhendus();

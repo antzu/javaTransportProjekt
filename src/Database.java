@@ -25,7 +25,7 @@ public class Database {
         System.out.println("Opened database successfully");
     }
     public void looKoormanr(){
-        String sql = "CREATE TABLE IF NOT EXISTS KOORMAD (NUMBER INTEGER);";
+        String sql = "CREATE TABLE IF NOT EXISTS KOORMAD (NUMBER INTEGER, LAMP INTEGER);";
         teostaAndmebaasiMuudatus(sql);
     }
 
@@ -39,8 +39,6 @@ public class Database {
         teostaAndmebaasiMuudatus(sql);
     }
 
-    // Andmebaasi muudatused ei tagasta väärtusi (erinevalt
-    // päringutest) ja on lihtne eraldi meetodi tuua.
     private void teostaAndmebaasiMuudatus(String sql) {
         try {
             // Statement objekt on vajalik, et SQL_Login käsku käivitada
@@ -88,7 +86,7 @@ public class Database {
         teostaAndmebaasiMuudatus(sql);
     }
     public void updateKoormanr(int n){
-        String sql = "UPDATE KOORMAD SET NUMBER=('"+n+"')";
+        String sql = "UPDATE KOORMAD SET NUMBER=('"+n+"') WHERE LAMP = ('"+0+"') ";
         teostaAndmebaasiMuudatus(sql);
     }
 
@@ -105,7 +103,7 @@ public class Database {
         ArrayList<Tellimus> TellimusteKogu = new ArrayList<>();
         try {
             Statement stat = conn.createStatement();
-            String sql = "SELECT * FROM TELLIMUSED"; //WHERE STAATUS = '0'";
+            String sql = "SELECT * FROM TELLIMUSED";
             ResultSet rs = stat.executeQuery(sql);
 
             while (rs.next()) {

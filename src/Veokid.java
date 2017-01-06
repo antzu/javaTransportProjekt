@@ -30,7 +30,7 @@ public class Veokid {
     public void VeokidKokku() {
         Database a = new Database();
         VeokiteKogu = a.VeokiteKogu();
-        System.out.println(VeokiteKogu);
+        //System.out.println(VeokiteKogu);
         a.sulgeYhendus();
     }
     public void VeokidImport(int mitu) throws FileNotFoundException {

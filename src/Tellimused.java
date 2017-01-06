@@ -51,13 +51,14 @@ public class Tellimused {
     public void TellimusedKokku() {
         Database a = new Database();
         TellimusteKogu = a.TellimusteKogu();
-        System.out.println(TellimusteKogu);
+        //System.out.println(TellimusteKogu);
         a.sulgeYhendus();
     }
+    //TellimusedKokkuSt prints only with staatus 0 tellimused for koormad DATA array
     public void TellimusedKokkuSt() {
         Database a = new Database();
         TellimusteKogu = a.TellimusteKoguSt(0);
-        System.out.println(TellimusteKogu);
+        //System.out.println(TellimusteKogu);
         a.sulgeYhendus();
     }
     public void TellimusedImport(int mitu) throws FileNotFoundException {
