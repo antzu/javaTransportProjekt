@@ -71,6 +71,7 @@ public class Kasutajaliides {
         hbox.setSpacing(10);
         hbox.getChildren().addAll(nrInput, alusedInput, kaalInput, addButton, deleteButton);
         //
+        
         bpane.setBottom(hbox);
 
         //Nupoude käsklused:

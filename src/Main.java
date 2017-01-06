@@ -11,6 +11,6 @@ public class Main extends Application{
     }
     @Override
     public void start (Stage primaryStage) throws Exception{
-        Kasutajaliides kasutajaliides = new Kasutajaliides();
+        Kasutajaliides kasutajaliides = new Kasutajaliides(); //Generates user interface
     }
 }

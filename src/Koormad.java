@@ -21,11 +21,11 @@ public class Koormad {
         koormanr = a.Koormanr();
     }
     public Koormad (){
-        getDATA();
-        getAutod();
+        getDATA(); //muudab Tellimustekogu algoritmi jaoks sobilikule kujule
+        getAutod(); //Teeb veokitelistist array, mis koosneb vaid alusekohtadest, muidu on autodel rohkem parameetreid
         System.out.println(Arrays.toString(DATA));
         System.out.println(autod);
-        ImportPopup();
+        ImportPopup(); //Küsib mitu koormat tahad teha ning alustab algoritmi
 
     }
     public void getDATA (){

@@ -61,6 +61,7 @@ public class Tellimused {
         a.sulgeYhendus();
     }
     public void TellimusedImport(int mitu) throws FileNotFoundException {
+        //Impordib .csv formaadiga failist tellimused programmi ning andmebaasi
         Database a = new Database();
         Scanner s = null;
         try {

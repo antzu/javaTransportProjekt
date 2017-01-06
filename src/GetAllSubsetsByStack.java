@@ -3,7 +3,9 @@
  */
 import java.util.ArrayList;
 import java.util.Stack;
-
+//See koodijupp pärineb suures osas
+// http://codereview.stackexchange.com/questions/36214/find-all-subsets-of-an-int-array-whose-sums-equal-a-given-target
+//Mõned muudatused ise juurde kirjutatud
 public class GetAllSubsetsByStack {
 
     /**
@@ -74,7 +76,7 @@ public class GetAllSubsetsByStack {
             stacks.add(i);
             sb.append(i).append("+");
         }
-        //System.out.println(sb.deleteCharAt(sb.length() - 1).toString());
+        //System.out.println(sb.deleteCharAt(sb.length() - 1).toString()); //Prindiks välja konsooli summad ja liidetavad
     }
 
     public void toStacklist(int summa) {

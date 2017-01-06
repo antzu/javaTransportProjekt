@@ -9,6 +9,7 @@ import javafx.scene.layout.VBox;
 /**
  * Created by antz on 19/12/2016.
  */
+
 public class Tabel {
 
     TableView<Tellimus> table;
