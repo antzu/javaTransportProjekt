@@ -31,8 +31,6 @@ public class Koormad {
         getKoormanr();
         getDATA(); //muudab Tellimustekogu algoritmi jaoks sobilikule kujule
         getAutod(); //Teeb veokitelistist array, mis koosneb vaid alusekohtadest, muidu on autodel rohkem parameetreid
-        //System.out.println(Arrays.toString(DATA));
-        //System.out.println(autod);
         ImportPopup(); //Küsib mitu koormat tahad teha ning alustab algoritmi
 
     }

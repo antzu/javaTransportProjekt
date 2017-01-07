@@ -44,10 +44,7 @@ public class Database {
         }
     }
     public void kustutaTellimus (int n) {
-            //Statement stat = conn.createStatement();
             String sql = "DELETE FROM TELLIMUSED WHERE TELLIMUSNR like ('"+n+"')";
-            //stat.executeUpdate(sql);
-            //stat.close();
             teostaAndmebaasiMuudatus(sql);
     }
 
@@ -57,22 +54,6 @@ public class Database {
     }
     public void salvestaVeok (int k, int a, int m){
         String sql = "INSERT INTO VEOKID (KANDEVOIME, ALUSEKOHTI, MAXTELLIMUSI) VALUES ('"+k+"', '"+a+"', '"+m+"')";
-        teostaAndmebaasiMuudatus(sql);
-    }
-    public void updateVeok(int n, int k){
-        String sql = "UPDATE VEOKID SET ALUSEKOHTI=('"+k+"') WHERE MAXTELLIMUSI = ('"+n+"')";
-        teostaAndmebaasiMuudatus(sql);
-    }
-    public void updateTellimusNr(int n, int k){
-        String sql = "UPDATE TELLIMUSED SET TELLIMUSNR=('"+k+"') WHERE TELLIMUSNR = ('"+n+"')";
-        teostaAndmebaasiMuudatus(sql);
-    }
-    public void updateTellimusKaal(int n, int k){
-        String sql = "UPDATE TELLIMUSED SET KAAL=('"+k+"') WHERE TELLIMUSNR = ('"+n+"')";
-        teostaAndmebaasiMuudatus(sql);
-    }
-    public void updateTellimusAlused(int n, int k){
-        String sql = "UPDATE TELLIMUSED SET ALUSED=('"+k+"') WHERE TELLIMUSNR = ('"+n+"')";
         teostaAndmebaasiMuudatus(sql);
     }
     public void updateTellimusStaatus(int n, int k){

@@ -7,7 +7,6 @@ import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -51,7 +50,6 @@ public class Tellimused {
     public void TellimusedKokku() {
         Database a = new Database();
         TellimusteKogu = a.TellimusteKogu();
-        //System.out.println(TellimusteKogu);
         a.sulgeYhendus();
     }
     //TellimusedKokkuSt prints only with staatus 0 tellimused for koormad DATA array
@@ -62,7 +60,7 @@ public class Tellimused {
         a.sulgeYhendus();
     }
     public void TellimusedImport(int mitu) throws FileNotFoundException {
-        //Impordib .csv formaadiga failist tellimused programmi ning andmebaasi
+        //Impordib .txt (tab delimited) formaadiga failist tellimused programmi ning andmebaasi
         Database a = new Database();
         Scanner s = null;
         try {

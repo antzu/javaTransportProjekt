@@ -22,7 +22,7 @@ public class Veok {
     }
 
     public String toString(){
-        return (/*"Kandevoime: "+ this.kandevoime+" Alusekohti: "+this.alusekohti+ " Maxtellimusi: "+this.maxtellimusi+ */" Vabaalusekohti: "+ this.vabaalusekohti);
+        return ("Kandevoime: "+ this.kandevoime+" Alusekohti: "+this.alusekohti+ " Maxtellimusi: "+this.maxtellimusi+ " Vabaalusekohti: "+ this.vabaalusekohti);
     }
 
     public void setKandevoime (int kandevoime){

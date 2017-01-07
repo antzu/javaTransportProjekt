@@ -30,7 +30,6 @@ public class Veokid {
     public void VeokidKokku() {
         Database a = new Database();
         VeokiteKogu = a.VeokiteKogu();
-        //System.out.println(VeokiteKogu);
         a.sulgeYhendus();
     }
     public void VeokidImport(int mitu) throws FileNotFoundException {
@@ -91,39 +90,6 @@ public class Veokid {
         });
     }
 
-    public int getVabadAlused(int i) {
-        return VeokiteKogu.get(i).vabaalusekohti;
-    }
-    public int VabadAlusedkokku () {
-        int sum = 0;
-        for (int i = 0; i < veokidkokku; i++) {
-            sum = getVabadAlused(i) + sum;
-
-        }
-        return sum;
-    }
-    public int getByAlusekohti (int i){
-        for (int j = 0; j < VeokiteKogu.size(); j++) {
-            if (getAlusekohti(j) == i){
-                return j;
-            }
-        }
-        return 9999;
-    }
-    public void setVabadAlused (int i, int j) {
-        VeokiteKogu.get(i).setVabaalusekohti(j);
-    }
-    public void changeVabadAlused (int i, int j){
-        int praegu = VeokiteKogu.get(i).vabaalusekohti;
-        int parast = praegu - j;
-        setVabadAlused(i, parast);
-    }
-    public void tyhjendaVeokid (){
-        for (int i = 0; i < veokidkokku; i++) {
-            setVabadAlused(i, VeokiteKogu.get(i).alusekohti);
-            System.out.println(VeokiteKogu.get(i));
-        }
-    }
     public int getAlusekohti (int i){
         return VeokiteKogu.get(i).getAlusekohti();
     }
