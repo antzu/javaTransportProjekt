@@ -59,6 +59,10 @@ public class Database {
         String sql = "INSERT INTO VEOKID (KANDEVOIME, ALUSEKOHTI, MAXTELLIMUSI) VALUES ('"+k+"', '"+a+"', '"+m+"')";
         teostaAndmebaasiMuudatus(sql);
     }
+    public void updateVeok(int n, int k){
+        String sql = "UPDATE VEOKID SET ALUSEKOHTI=('"+k+"') WHERE MAXTELLIMUSI = ('"+n+"')";
+        teostaAndmebaasiMuudatus(sql);
+    }
     public void updateTellimusNr(int n, int k){
         String sql = "UPDATE TELLIMUSED SET TELLIMUSNR=('"+k+"') WHERE TELLIMUSNR = ('"+n+"')";
         teostaAndmebaasiMuudatus(sql);

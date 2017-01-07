@@ -42,7 +42,7 @@ public class Veokid {
             e.printStackTrace();
         }
         for (int i = 1; i <= mitu; i++) {
-            Veok newVeokid = new Veok(0, 0, i);
+            Veok newVeokid = new Veok(0, 0, 0);
             if (s.hasNextInt()) {
                 int kandevoime = s.nextInt();
                 newVeokid.setKandevoime(kandevoime);
@@ -101,6 +101,14 @@ public class Veokid {
 
         }
         return sum;
+    }
+    public int getByAlusekohti (int i){
+        for (int j = 0; j < VeokiteKogu.size(); j++) {
+            if (getAlusekohti(j) == i){
+                return j;
+            }
+        }
+        return 9999;
     }
     public void setVabadAlused (int i, int j) {
         VeokiteKogu.get(i).setVabaalusekohti(j);

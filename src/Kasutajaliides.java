@@ -51,7 +51,7 @@ public class Kasutajaliides {
         tabeliala.getChildren().addAll(tabel.table2);
         bpane.setCenter(tabeliala);
 
-        //Keskmine tabeli paneel alumine osa (menüü):
+        //Keskmine tabeli paneel ülemine lisa/kustuta osa (menüü):
         //
         TextField nrInput = new TextField();
         nrInput.setPromptText("Nr");

@@ -13,11 +13,11 @@ import java.util.Arrays;
  */
 public class Koormad {
     public static ArrayList<Integer> autod;
-    public static int [] DATA;
+    public static int[] DATA;
     GetAllSubsetsByStack sets;
     int koormanr = 1;
 
-    public void getKoormanr (){
+    public void getKoormanr() {
         Database a = new Database();
         if (a.Koormanr() != 0) {
             koormanr = a.Koormanr();
@@ -26,7 +26,8 @@ public class Koormad {
         }
         a.sulgeYhendus();
     }
-    public Koormad (){
+
+    public Koormad() {
         getKoormanr();
         getDATA(); //muudab Tellimustekogu algoritmi jaoks sobilikule kujule
         getAutod(); //Teeb veokitelistist array, mis koosneb vaid alusekohtadest, muidu on autodel rohkem parameetreid
@@ -35,15 +36,17 @@ public class Koormad {
         ImportPopup(); //Küsib mitu koormat tahad teha ning alustab algoritmi
 
     }
-    public void getDATA (){
+
+    public void getDATA() {
         Tellimused tellimused = new Tellimused();
         tellimused.TellimusedKokkuSt();
         DATA = new int[tellimused.TellimusteKogu.size()];
         for (int i = 0; i < tellimused.TellimusteKogu.size(); i++) {
-            DATA [i] = tellimused.getAlused(i);
+            DATA[i] = tellimused.getAlused(i);
         }
     }
-    public void getAutod (){
+
+    public void getAutod() {
         Veokid veokid = new Veokid();
         veokid.VeokidKokku();
         autod = new ArrayList();
@@ -51,18 +54,19 @@ public class Koormad {
             autod.add(veokid.getAlusekohti(i));
         }
     }
-    public void getKoormad (int mitu){
-        if (mitu > autod.size()){
+
+    public void getKoormad(int mitu) {
+        if (mitu > autod.size()) {
             ImportPopup();
         } else {
             for (int i = 0; i < mitu; i++) {
                 getDATA();
                 if (autod.get(i) <= sumDATA(DATA)) {
-                    sets = new GetAllSubsetsByStack(autod.get(i), DATA);
-                    sets.toStacklist(autod.get(i));
-                    TellimusToKoorem(sets.stackslist.get(0));
+                    sets = new GetAllSubsetsByStack(autod.get(i), DATA); //Teeb DATA baasil tellimustest autole sobiva kombinatsiooni
+                    sets.toStacklist(autod.get(i)); //Lisab kombinatsiooni kombinatsioonide arraysse
+                    TellimusToKoorem(sets.stackslist.get(0)); //Votab selle sama kombinatsiooni ja teeb koormaks (siin oleks voimalik algoritmi paremaks teha)
                 } else {
-                    TellimusToKoorem(DATAarray(DATA));
+                    TellimusToKoorem(DATAarray(DATA)); //Kui tellimusi on vähem, kui autol ruumi, siis lisab kõik
                 }
                 koormanr++;
 
@@ -70,7 +74,7 @@ public class Koormad {
         }
     }
 
-    public void ImportPopup () {
+    public void ImportPopup() {
         final int[] mitu = {0};
         Stage stage = new Stage();
         GridPane pane = new GridPane();
@@ -92,12 +96,13 @@ public class Koormad {
             getKoormad(mitu[0]);
         });
     }
-    public void TellimusToKoorem (ArrayList stack){
+
+    public void TellimusToKoorem(ArrayList stack) {
         Tellimused tellimused = new Tellimused();
-        tellimused.TellimusedKokkuSt();
+        tellimused.TellimusedKokkuSt(); //updates data from DB
         Database a = new Database();
         for (int i = 0; i < stack.size(); i++) {
-            int j = tellimused.getByAlused((int)stack.get(i));
+            int j = tellimused.getByAlused((int) stack.get(i));
             tellimused.setStaatus(j, 1);
 
             a.updateTellimusStaatus(tellimused.getNumber(j), 1);
@@ -105,14 +110,16 @@ public class Koormad {
         }
         a.sulgeYhendus();
     }
-    public int sumDATA (int[] DATA){
+
+    public int sumDATA(int[] DATA) {
         int sum = 0;
         for (int i = 0; i < DATA.length; i++) {
-           sum += DATA[i];
+            sum += DATA[i];
         }
         return sum;
     }
-    public ArrayList DATAarray (int [] DATA){
+
+    public ArrayList DATAarray(int[] DATA) {
         ArrayList data = new ArrayList();
         for (int i = 0; i < DATA.length; i++) {
             data.add(DATA[i]);
@@ -120,3 +127,4 @@ public class Koormad {
         return data;
     }
 }
+

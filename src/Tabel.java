@@ -68,14 +68,14 @@ public class Tabel {
 
         table2 = new TableView<>();
         table2.setItems(getVeok());
-        table2.getColumns().addAll(kandeColumn, aluseColumn, maxtellimusiColumn);
+        table2.getColumns().addAll(kandeColumn, aluseColumn/*, maxtellimusiColumn*/);
     }
     public ObservableList<Tellimus> getTellimus(){
         ObservableList<Tellimus> tellimused = FXCollections.observableArrayList();
         Tellimused tellimused1 = new Tellimused();
         tellimused1.TellimusedKokku();
         for (int i = 0; i < tellimused1.TellimusteKogu.size(); i++) {
-            tellimused.add(tellimused1.TellimusteKogu.get(i));//(new Tellimus(tellimused1.getKaal(i), tellimused1.getAlused(i), tellimused1.getNumber(i), tellimused1.getStaatus(i)));
+            tellimused.add(tellimused1.TellimusteKogu.get(i));
         }
 
         return tellimused;
